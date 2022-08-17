@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"regexp"
 
-	"github.com/pquerna/dpop/enclave"
+	"github.com/wlie/dpop/enclave"
 	"github.com/urfave/cli"
 	"gopkg.in/square/go-jose.v2"
 )

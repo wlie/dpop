@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/pquerna/dpop"
+	"github.com/wlie/dpop"
 	"github.com/urfave/cli"
 	"gopkg.in/square/go-jose.v2"
 )

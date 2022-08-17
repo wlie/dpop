@@ -1,6 +1,6 @@
 # dpop
 
-[![GoDoc](https://godoc.org/github.com/pquerna/dpop?status.svg)](https://godoc.org/github.com/pquerna/dpop) [![Build Status](https://travis-ci.org/pquerna/dpop.svg?branch=master)](https://travis-ci.org/pquerna/dpop)
+[![GoDoc](https://godoc.org/github.com/wlie/dpop?status.svg)](https://godoc.org/github.com/wlie/dpop) [![Build Status](https://travis-ci.org/wlie/dpop.svg?branch=master)](https://travis-ci.org/wlie/dpop)
 
 Go library for DPoP (OAuth 2.0 Demonstration of Proof-of-Possession at the Application Layer).
 
@@ -10,7 +10,7 @@ This implementation is current for [draft-fett-oauth-dpop-03](https://tools.ietf
 
 ## Go API
 
-See the [godoc](https://godoc.org/github.com/pquerna/dpop).
+See the [godoc](https://godoc.org/github.com/wlie/dpop).
 
 ## CLI
 
