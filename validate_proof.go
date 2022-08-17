@@ -57,7 +57,7 @@ type ProofClaims struct {
 // JSONWebKey to a previously used value.
 //
 func (pv *Validator) ValidateTokenRequest(req *http.Request) (*ProofClaims, []byte, *jose.JSONWebKey, error) {
-	pc, raw, k, err := pv.validate(req)
+	pc, raw, k, err := pv.Validate(req)
 	if err != nil {
 		return nil, nil, nil, err
 	}
@@ -79,7 +79,7 @@ func (pv *Validator) ValidateTokenRequest(req *http.Request) (*ProofClaims, []by
 //	       received previously (see Section 9.1).
 //
 func (pv *Validator) ValidateResourceAccess(req *http.Request, keyFingerprint string) (*ProofClaims, []byte, *jose.JSONWebKey, error) {
-	pc, raw, k, err := pv.validate(req)
+	pc, raw, k, err := pv.Validate(req)
 	if err != nil {
 		return nil, nil, nil, err
 	}
@@ -101,7 +101,7 @@ func (pv *Validator) ValidateResourceAccess(req *http.Request, keyFingerprint st
 	return pc, raw, k, nil
 }
 
-func (pv *Validator) validate(req *http.Request) (*ProofClaims, []byte, *jose.JSONWebKey, error) {
+func (pv *Validator) Validate(req *http.Request) (*ProofClaims, []byte, *jose.JSONWebKey, error) {
 	/*
 		4.2.  Checking DPoP Proofs
 
